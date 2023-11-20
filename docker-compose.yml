@@ -1,0 +1,10 @@
+version: "3" 
+services: 
+  mysql: 
+    build:
+      context: ./mysql-docker
+    ports: 
+      - "3306:3306" 
+    environment: 
+      TZ: Asia/Tokyo
+    restart: always
